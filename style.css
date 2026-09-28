@@ -135,7 +135,7 @@ h1 {
 }
 
 .pao_doce {
-    height: 200px;
+    height: 500px;
     object-fit: cover;
 }
 
@@ -215,7 +215,6 @@ article {
     font-style: italic;
 }
 
-
 .img_comentario {
     height: 100px;
     width: 100px;
@@ -289,4 +288,140 @@ footer p {
 .sobre_nos p {
     font-size: 20px;
     width: 800px;
+}
+
+@media (max-width: 480px) {
+
+    header {
+        visibility: hidden;
+    }
+
+    .img_hero {
+        height: 20rem;
+    }
+
+    h1 {
+        font-size: 20px;
+        
+    }
+
+    .btn_hero_div {
+        gap: 0px;
+    }
+
+    .btn_hero {
+        font-size: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 8px 30px;
+    }
+
+    .container {
+        width: 21rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .img_menu {
+        width: 60%;
+    }
+
+    .item_container {
+        height: 300px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .btn-carrinho {
+        padding: 10px 20px;
+    }
+
+    .texto_item_container {
+        font-size: 30px;
+    }
+
+
+    .comentario {
+        width: 20rem;
+        height: 25rem;
+        font-size: 10px;
+        font-size: 14px;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .img_comentario {
+        margin: 0 auto;
+        height: 80%;
+        width: 80%;
+    }
+
+    .texto_comentario {
+        margin-top: 30px;
+    }
+
+
+    article {
+        flex-direction: column;
+        padding: 50px 0;
+    }
+
+    .nome_comentario {
+        display: block;
+    }
+
+    .sobre_nos p {
+        width: 100%;
+    }
+
+    .maps {
+
+        margin: 2rem auto;
+        width: 20rem;
+        height: 15rem;
+    }
+
+    .endereco p {
+        margin-bottom: 2rem;
+    }
+
+    .contatos {
+        margin: 50px;
+    }
+
+    .footer_whatzapp {
+        padding: 0;
+        margin-bottom: 30px;
+        color: #1C100E;
+        padding: 10px 30px;
+        border-radius: 30px;
+    }
+
+    .footer_instagram {
+        border-radius:  30px;
+        background: #833ab4;
+        background:
+            radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        color: #1C100E;
+        padding: 10px 30px;
+    }
+
+    .footer_whatzapp {
+        background-color: green;
+    }
+
+
+    footer {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .horarios_funcionamento {
+        margin-bottom: 50px;
+    }
 }
